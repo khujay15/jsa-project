@@ -1,0 +1,30 @@
+.record {
+    position: absolute;
+    width: 400px;
+    left: 30%;
+    top: 10%;
+    z-index: 2;
+}
+.record:hover {
+    border: 5px solid transparent;
+}
+.sheet {
+    position: absolute;
+    width: 400px;
+    left: 40%;
+    top: 10%;
+    z-index: 3;
+}
+.sheet:hover {
+    border: 5px solid transparent;
+}
+.card {
+    position: absolute;
+    width: 500px;
+    left: 35%;
+    top: 20%;
+    z-index: 4;
+}
+.card:hover {
+    border: 5px solid transparent;
+}

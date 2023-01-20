@@ -7,6 +7,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@qiuz/react-image-map": "^1.1.8",
     "framer-motion": "^8.5.0",
     "next": "latest",
     "react": "^18.2.0",
