@@ -49,8 +49,7 @@ export function One() {
   return (
     <div
       style={{
-        width: '70%',
-        backgroundColor: 'black',
+        width: '70vw',
         display: 'flex',
         justifyContent: 'center',
       }}

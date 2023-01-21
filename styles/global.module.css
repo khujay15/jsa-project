@@ -7,3 +7,13 @@
 .mapAreaHover:hover {
     background-color: #8e878725;
 }
+
+.indicator {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    cursor: pointer;
+}
+.indicator:hover {
+    border: 5px solid transparent;
+}

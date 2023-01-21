@@ -1,4 +1,5 @@
 import { CSSProperties } from 'react'
+import styles from '../styles/global.module.css'
 
 interface Props {
   style?: CSSProperties
@@ -9,11 +10,8 @@ export function Indicator({ onClick, style }: Props) {
   return (
     <img
       src={'/indi.png'}
+      className={styles.indicator}
       style={{
-        width: '35px',
-        height: '35px',
-        position: 'absolute',
-        cursor: 'pointer',
         ...style,
       }}
       onClick={onClick}
