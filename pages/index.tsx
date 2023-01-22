@@ -25,12 +25,67 @@ import { TwentyFour } from '../components/scene/TwentyFour'
 import { ThirtyOne } from '../components/scene/ThirtyOne'
 import { TwentyNineSide } from '../components/scene/TwentyNineSide'
 import { FourtyOne } from '../components/scene/FourtyOne'
+import { useEffect } from 'react'
+
+function imagePreload(urls: string[]) {
+  urls.forEach((url) => {
+    const img = new Image()
+    img.src = url
+  })
+}
+
+function audioPreload(urls: string[]) {
+  urls.forEach((url) => {
+    const audio = new Audio()
+    audio.src = url
+  })
+}
 
 const IndexPage = () => {
+  useEffect(() => {
+    imagePreload([
+      '/1.JPG',
+      '/2.png',
+      '/3-card.png',
+      '/3-record.png',
+      '/3-task.png',
+      '/3.jpg',
+      '/4-logo.png',
+      '/4-start.png',
+      '/5.JPG',
+      '/6.JPG',
+      '/7.JPG',
+      '/7-2.JPG',
+      '/8.JPG',
+      '/8-tag-1.png',
+      '/9-1.jpg',
+      '/9-card.png',
+      '/9.JPG',
+      '/10.JPG',
+      '/11.JPG',
+      '/12.PNG',
+      '/13.JPG',
+      '/14.PNG',
+      '/16-p.PNG',
+      '/16.JPG',
+      '/17-1.PNG',
+      '/17-2.PNG',
+      '/17.JPG',
+      '/18.JPG',
+      '/19.JPG',
+      '/20-1.jpg',
+      '/20-2.jpeg',
+    ])
+  }, [])
+
+  useEffect(() => {
+    audioPreload(['/audio/begin.wav', '/audio/door-bell.mp3', '/audio/main-bgm.mp4'])
+  }, [])
+
   const router = useRouter()
   const { query } = router
 
-  const { curAudio, setCurAudio } = useAudio({ audioUrl: '/audio/Piano-Ragtime.wav' })
+  const { curAudio, setCurAudio } = useAudio({ audioUrl: '/audio/begin.wav' })
 
   const pushPage = (page) => router.push({ query: { page } })
   const movePage = (page) => () => pushPage(page)

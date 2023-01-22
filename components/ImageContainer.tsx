@@ -1,4 +1,5 @@
 import { ReactNode } from 'react'
+import Image from 'next/image'
 
 interface Props {
   src?: string
@@ -11,7 +12,7 @@ export const ImageContainer = ({ src, style, pageNumber, indicator }: Props) => 
 
   return (
     <>
-      <img src={imageSrc} style={style ? style : { height: '100vh' }} />
+      <Image alt="Image" src={imageSrc} style={style ? style : { height: '100vh' }} />
       {indicator}
     </>
   )
