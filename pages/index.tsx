@@ -26,6 +26,7 @@ import { ThirtyOne } from '../components/scene/ThirtyOne'
 import { TwentyNineSide } from '../components/scene/TwentyNineSide'
 import { FourtyOne } from '../components/scene/FourtyOne'
 import { useEffect } from 'react'
+import Head from 'next/head'
 
 function imagePreload(urls: string[]) {
   urls.forEach((url) => {
@@ -729,6 +730,12 @@ const IndexPage = () => {
   }
   return (
     <>
+      <Head>
+        <link rel="preload" href="/2.png" as="image" />
+        <link rel="preload" href="/15.mp4" as="video" />
+        <link rel="preload" href="/3.jpg" as="video" />
+        <link rel="preload" href="/4-logo.png" as="video" />
+      </Head>
       <GameAudio audio={curAudio} />
       <div
         style={{
