@@ -4,6 +4,7 @@ import { ReactNode } from 'react'
 
 interface Props {
   mapArea: any[]
+  // eslint-disable-next-line no-unused-vars
   onMapClick: (area?, index?) => void
   src: string
   indicator?: ReactNode

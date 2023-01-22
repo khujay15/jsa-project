@@ -24,7 +24,6 @@ import { SixTeen } from '../components/scene/Sixteen'
 import { TwentyFour } from '../components/scene/TwentyFour'
 import { ThirtyOne } from '../components/scene/ThirtyOne'
 import { TwentyNineSide } from '../components/scene/TwentyNineSide'
-import { End } from '../components/scene/End'
 import { FourtyOne } from '../components/scene/FourtyOne'
 
 const IndexPage = () => {
