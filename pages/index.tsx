@@ -73,14 +73,28 @@ const IndexPage = () => {
       '/17-2.PNG',
       '/17.JPG',
       '/18.JPG',
-      '/19.JPG',
+      '/19-a.JPG',
       '/20-1.jpg',
       '/20-2.jpeg',
     ])
   }, [])
 
   useEffect(() => {
-    audioPreload(['/audio/begin.wav', '/audio/door-bell.mp3', '/audio/main-bgm.mp4'])
+    audioPreload([
+      '/audio/begin.wav',
+      '/audio/door-bell.mp3',
+      '/audio/main-bgm.mp4',
+
+      '/audio/radio-c1.mp4',
+      '/audio/radio-c2.mp4',
+      '/audio/radio-c3.mp4',
+      '/audio/radio-c4.mp3',
+      '/audio/radio-c5.mp4',
+
+      '/audio/phone.mp4',
+      '/audio/phone-up.mp4',
+      '/audio/phone-talk.mp4',
+    ])
   }, [])
 
   const router = useRouter()
@@ -114,7 +128,7 @@ const IndexPage = () => {
       case '7':
         return (
           <ImageContainer
-            pageNumber={7}
+            src="/7.JPG"
             indicator={
               <Indicator
                 style={{
@@ -132,7 +146,7 @@ const IndexPage = () => {
       case '8':
         return (
           <ImageContainer
-            pageNumber={8}
+            src="/8.JPG"
             indicator={
               <>
                 <Indicator
@@ -165,7 +179,7 @@ const IndexPage = () => {
       case '10':
         return (
           <ImageContainer
-            pageNumber={10}
+            src="/10.JPG"
             indicator={
               <>
                 <Indicator
@@ -277,7 +291,7 @@ const IndexPage = () => {
       case '19':
         return (
           <ImageContainer
-            src="/19.JPG"
+            src="/19-a.JPG"
             indicator={
               <Indicator
                 style={{
@@ -733,8 +747,19 @@ const IndexPage = () => {
       <Head>
         <link rel="preload" href="/2.png" as="image" />
         <link rel="preload" href="/15.mp4" as="video" />
-        <link rel="preload" href="/3.jpg" as="video" />
-        <link rel="preload" href="/4-logo.png" as="video" />
+        <link rel="preload" href="/15.mp4" as="video" />
+
+        {/* <link rel="preload" href="/audio/radio-c1.mp4" as="audio" />
+        <link rel="preload" href="/audio/radio-c2.mp4" as="audio" />
+        <link rel="preload" href="/audio/radio-c3.mp4" as="audio" />
+        <link rel="preload" href="/audio/radio-c4.mp4" as="audio" />
+        <link rel="preload" href="/audio/radio-c5.mp4" as="audio" />
+
+        <link rel="preload" href="/audio/phone-up.mp4" as="audio" />
+        <link rel="preload" href="/audio/phone-talk.mp4" as="audio" />
+        <link rel="preload" href="/audio/phone.mp4" as="audio" /> */}
+
+        <link rel="preload" href="/4-logo.png" />
       </Head>
       <GameAudio audio={curAudio} />
       <div

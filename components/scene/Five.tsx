@@ -7,7 +7,7 @@ export function Five() {
 
   return (
     <ImageContainer
-      pageNumber={5}
+      src="/5.JPG"
       indicator={
         <Indicator
           style={{
