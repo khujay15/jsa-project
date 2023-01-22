@@ -4,6 +4,7 @@ import styles from '../../styles/Three.module.css'
 import globalStyle from '../../styles/global.module.css'
 import { Indicator } from '../Indicator'
 import { ImageMap } from '@qiuz/react-image-map'
+import { useAudio } from '../useAudio'
 
 export function NineFirst() {
   const mapArea = [
@@ -19,7 +20,8 @@ export function NineFirst() {
   const router = useRouter()
   const [isButtonClicked, setIsButtonClicked] = useState<boolean>(false)
   const [clicked, setClicked] = useState<string[]>([])
-  console.log(window.location.hash)
+
+  const { curAudio } = useAudio({ audioUrl: '/audio/photo.wav' })
 
   return (
     <div
@@ -30,7 +32,14 @@ export function NineFirst() {
         justifyContent: 'center',
       }}
     >
-      <ImageMap src="/9-1.jpg" map={mapArea} onMapClick={() => setIsButtonClicked(true)} />
+      <ImageMap
+        src="/9-1.jpg"
+        map={mapArea}
+        onMapClick={() => {
+          curAudio?.play()
+          setIsButtonClicked(true)
+        }}
+      />
       <Indicator
         style={{
           bottom: '10%',

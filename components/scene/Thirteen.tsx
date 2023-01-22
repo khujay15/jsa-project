@@ -2,6 +2,8 @@ import { useRouter } from 'next/router'
 import globalStyle from '../../styles/global.module.css'
 import { Indicator } from '../Indicator'
 import { ImageMap } from '@qiuz/react-image-map'
+import { useAudio } from '../useAudio'
+import { useEffect } from 'react'
 
 export function Thirteen() {
   const mapArea = [
@@ -15,7 +17,14 @@ export function Thirteen() {
   ]
 
   const router = useRouter()
-  console.log(window.location.hash)
+  const { curAudio } = useAudio({ audioUrl: '/audio/phone.mp4' })
+
+  useEffect(() => {
+    if (router.query.audioPlayed) return
+    setTimeout(() => {
+      curAudio?.play()
+    }, 500)
+  }, [router.query, curAudio])
 
   return (
     <div
@@ -26,11 +35,12 @@ export function Thirteen() {
         justifyContent: 'center',
       }}
     >
-      <ImageMap src="/13.JPG" map={mapArea} onMapClick={() => router.push({ query: { page: 12 } })} />
+      <ImageMap src="/13.JPG" map={mapArea} onMapClick={() => router.push({ query: { page: 14 } })} />
       <Indicator
         style={{
-          bottom: '40%',
+          bottom: '50%',
           right: '40%',
+          transform: 'rotate(270deg)',
         }}
         onClick={() => router.push({ query: { page: 15 } })}
       />

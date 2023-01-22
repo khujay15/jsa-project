@@ -26,11 +26,11 @@ export function Eleven() {
         justifyContent: 'center',
       }}
     >
-      <ImageMap src="/11.jpg" map={mapArea} onMapClick={() => router.push({ query: { page: 12 } })} />
+      <ImageMap src="/11.JPG" map={mapArea} onMapClick={() => router.push({ query: { page: 12 } })} />
       <Indicator
         style={{
-          bottom: '55%',
-          right: '40%',
+          bottom: '50%',
+          right: '20%',
           transform: 'rotate(90deg)',
         }}
         onClick={() => router.push({ query: { page: 13 } })}

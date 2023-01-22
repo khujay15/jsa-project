@@ -9,7 +9,7 @@ const mapArea = [
     height: '35.22007722007722%',
     left: '38.350217076700396%',
     top: '46.833976833976834%',
-    render: () => <div className={styles.mapAreaHover} />,
+    render: () => <div className={styles.mapArea} />,
   },
   // 초인종
   {
