@@ -33,7 +33,7 @@ export function Nine() {
           bottom: '10%',
           transform: 'rotate(180deg)',
         }}
-        onClick={() => router.push({ query: { page: 8 } })}
+        onClick={() => router.push({ query: { ...router.query, page: 8 } })}
       />
     </div>
   )

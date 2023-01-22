@@ -45,7 +45,7 @@ export function NineFirst() {
           bottom: '10%',
           transform: 'rotate(180deg)',
         }}
-        onClick={() => router.push({ query: { page: 9 } })}
+        onClick={() => router.push({ query: { page: 9, hasPhoto: 0 } })}
       />
       {isButtonClicked && (
         <img

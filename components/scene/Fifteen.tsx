@@ -8,6 +8,9 @@ export function Fifteen() {
   const { curAudio } = useAudio({ audioUrl: '/audio/light.wav' })
   useEffect(() => {
     curAudio?.play()
+    return () => {
+      curAudio?.pause()
+    }
   }, [curAudio])
   return (
     <>

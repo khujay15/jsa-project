@@ -17,6 +17,15 @@ import { Twelve } from '../components/scene/Twelve'
 import { Fourteen } from '../components/scene/Fourteen'
 import { Fifteen } from '../components/scene/Fifteen'
 import { Forty } from '../components/scene/Forty'
+import { Six } from '../components/scene/Six'
+import { EightTag } from '../components/scene/EightTag'
+import { SevenSecond } from '../components/scene/SevenSecond'
+import { SixTeen } from '../components/scene/Sixteen'
+import { TwentyFour } from '../components/scene/TwentyFour'
+import { ThirtyOne } from '../components/scene/ThirtyOne'
+import { TwentyNineSide } from '../components/scene/TwentyNineSide'
+import { End } from '../components/scene/End'
+import { FourtyOne } from '../components/scene/FourtyOne'
 
 const IndexPage = () => {
   const router = useRouter()
@@ -46,21 +55,7 @@ const IndexPage = () => {
         }
         return <Five />
       case '6':
-        return (
-          <ImageContainer
-            pageNumber={6}
-            indicator={
-              <Indicator
-                style={{
-                  bottom: '50%',
-                  left: '20%',
-                  transform: 'rotate(270deg)',
-                }}
-                onClick={() => router.push({ query: { page: 7 } })}
-              />
-            }
-          />
-        )
+        return <Six />
       case '7':
         return (
           <ImageContainer
@@ -77,21 +72,7 @@ const IndexPage = () => {
           />
         )
       case '7-2':
-        return (
-          <ImageContainer
-            src="/7-2.JPG"
-            indicator={
-              <Indicator
-                style={{
-                  bottom: '55%',
-                  left: '30%',
-                  transform: 'rotate(270deg)',
-                }}
-                onClick={() => router.push({ query: { page: 10 } })}
-              />
-            }
-          />
-        )
+        return <SevenSecond />
 
       case '8':
         return (
@@ -105,7 +86,7 @@ const IndexPage = () => {
                     right: '29%',
                     transform: 'rotate(90deg)',
                   }}
-                  onClick={() => router.push({ query: { page: 9 } })}
+                  onClick={() => router.push({ query: { ...router.query, page: 9 } })}
                 />
                 <Indicator
                   style={{
@@ -113,37 +94,14 @@ const IndexPage = () => {
                     left: '35%',
                     transform: 'rotate(270deg)',
                   }}
-                  onClick={() => router.push({ query: { page: '8-tag-1' } })}
+                  onClick={() => router.push({ query: { ...router.query, page: '8-tag-1' } })}
                 />
               </>
             }
           />
         )
       case '8-tag-1':
-        return (
-          <ImageContainer
-            src="/8-tag-1.png"
-            indicator={
-              <>
-                <Indicator
-                  style={{
-                    bottom: '80%',
-                  }}
-                  onClick={() => router.push({ query: { page: '7-2' } })}
-                />
-
-                <Indicator
-                  style={{
-                    bottom: '10%',
-                    right: '10%',
-                    transform: 'rotate(90deg)',
-                  }}
-                  onClick={movePage(8)}
-                />
-              </>
-            }
-          />
-        )
+        return <EightTag />
       case '9':
         return <Nine />
       case '9-1':
@@ -176,19 +134,7 @@ const IndexPage = () => {
       case '15':
         return <Fifteen />
       case '16':
-        return (
-          <ImageContainer
-            pageNumber={16}
-            indicator={
-              <Indicator
-                style={{
-                  bottom: '50%',
-                }}
-                onClick={() => router.push({ query: { page: 17 } })}
-              />
-            }
-          />
-        )
+        return <SixTeen />
       case '17':
         return (
           <ImageMapContainer
@@ -378,7 +324,6 @@ const IndexPage = () => {
               <Indicator
                 style={{
                   bottom: '10%',
-                  // transform: 'rotate(90deg)',
                 }}
                 onClick={() => router.push({ query: { page: 24 } })}
               />
@@ -386,30 +331,7 @@ const IndexPage = () => {
           />
         )
       case '24':
-        return (
-          <ImageMapContainer
-            src="/24.jpg"
-            onMapClick={() => router.push({ query: { page: 25 } })}
-            mapArea={[
-              {
-                width: '7.670043415340087%',
-                height: '38.22393822393823%',
-                left: '50.680625904486256%',
-                top: '28.764478764478763%',
-              },
-            ]}
-            indicator={
-              <Indicator
-                style={{
-                  bottom: '40%',
-                  right: '35%',
-                  transform: 'rotate(30deg)',
-                }}
-                onClick={() => router.push({ query: { page: 26 } })}
-              />
-            }
-          />
-        )
+        return <TwentyFour />
 
       case '25':
         return (
@@ -421,7 +343,7 @@ const IndexPage = () => {
                   bottom: '10%',
                   transform: 'rotate(180deg)',
                 }}
-                onClick={() => router.push({ query: { page: 24 } })}
+                onClick={() => router.push({ query: { page: 24, showTwins: 0 } })}
               />
             }
           />
@@ -592,22 +514,7 @@ const IndexPage = () => {
           />
         )
       case '29-b-p':
-        return (
-          <ImageContainer
-            src="/29-b-p.png"
-            indicator={
-              <>
-                <Indicator
-                  style={{
-                    bottom: '10%',
-                    transform: 'rotate(180deg)',
-                  }}
-                  onClick={movePage('29')}
-                />
-              </>
-            }
-          />
-        )
+        return <TwentyNineSide />
       case '30':
         return (
           <ImageMapContainer
@@ -630,38 +537,7 @@ const IndexPage = () => {
           />
         )
       case '31':
-        return (
-          <ImageMapContainer
-            mapArea={[
-              {
-                width: '10.134587554269176%',
-                height: '11.227799227799228%',
-                left: '40.08683068017367%',
-                top: '55.907335907335906%',
-              },
-              {
-                width: '20.11577424023155%',
-                height: '53.47490347490347%',
-                left: '57.48236251808974%',
-                top: '43.050193050193045%',
-              },
-            ]}
-            onMapClick={(_, index) => {
-              if (index === 0) router.push({ query: { page: '31-1' } })
-              if (index === 1) window.alert('click person')
-            }}
-            src="/31.jpeg"
-            indicator={
-              <Indicator
-                style={{
-                  bottom: '10%',
-                  transform: 'rotate(180deg)',
-                }}
-                onClick={movePage(30)}
-              />
-            }
-          />
-        )
+        return <ThirtyOne />
       case '31-1':
         return (
           <ImageContainer
@@ -789,7 +665,9 @@ const IndexPage = () => {
       case '40':
         return <Forty />
       case '41':
-        return <ImageContainer style={{ height: '60vh' }} src="/41-end.png" />
+        return <FourtyOne />
+      case 'end':
+        return <img src="/end.png" />
 
       default:
         return <One />

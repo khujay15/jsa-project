@@ -2,19 +2,33 @@ import { useRouter } from 'next/router'
 import { Indicator } from '../Indicator'
 import { ImageMapContainer } from '../ImageMapContainer'
 import { useAudio } from '../useAudio'
+import { SubscriptionBox } from '../Subscription'
+import { useState } from 'react'
+
+const mapArea = [
+  {
+    width: '19.685962373371922%',
+    height: '36.26966292134831%',
+    left: '26.62807525325615%',
+    top: '43.258426966292134%',
+  },
+]
+
+const subFourteen = [
+  {
+    author: '???',
+    text: '뭐해? 빨리 계단으로 내려와! 지금 당장 이 곳을 벗어나야해. 그들이 실험을 시작했어! 나 지금 밑에 있다고!',
+  },
+  {
+    author: 'Mr.Schluss',
+    text: '무슨 말이지?”',
+  },
+]
 
 export function Fourteen() {
-  const mapArea = [
-    {
-      width: '19.685962373371922%',
-      height: '36.26966292134831%',
-      left: '26.62807525325615%',
-      top: '43.258426966292134%',
-    },
-  ]
-
   const router = useRouter()
   const { curAudio } = useAudio({ audioUrl: '/audio/phone-up.mp4' })
+  const [isTelClick, setIsTelClick] = useState(false)
 
   return (
     <div
@@ -32,6 +46,7 @@ export function Fourteen() {
           curAudio?.play()
           const newAudio = new Audio('/audio/phone-talk.mp4')
           newAudio.play()
+          setIsTelClick(true)
         }}
         indicator={
           <Indicator
@@ -44,6 +59,7 @@ export function Fourteen() {
           />
         }
       />
+      {isTelClick && <SubscriptionBox textSequence={subFourteen} />}
     </div>
   )
 }

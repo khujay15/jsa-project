@@ -15,7 +15,6 @@ export function Eleven() {
   ]
 
   const router = useRouter()
-  console.log(window.location.hash)
 
   return (
     <div

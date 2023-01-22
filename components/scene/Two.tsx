@@ -1,6 +1,8 @@
 import { ImageMap } from '@qiuz/react-image-map'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import styles from '../../styles/global.module.css'
+import { SubscriptionBox } from '../Subscription'
 import { useAudio } from '../useAudio'
 
 const mapArea = [
@@ -13,13 +15,29 @@ const mapArea = [
   },
 ]
 
+const subTwo = [
+  {
+    author: '???',
+    text: '누구세요?',
+  },
+  {
+    author: 'Mr.Schluss',
+    text: '안녕하세요. 오늘부터 보안팀으로 출근하게 된 Schluss Jung 입니다.',
+  },
+  {
+    author: '???',
+    text: '반갑습니다. 들어오세요.',
+  },
+]
+
 export function Two() {
   const router = useRouter()
   const { curAudio } = useAudio({ audioUrl: '/audio/door-bell.mp3' })
+  const [isBellClicked, setIsBellClicked] = useState(false)
 
   function handleMapClick() {
     curAudio.play()
-    router.push({ query: { page: 3 } })
+    setIsBellClicked(true)
   }
 
   return (
@@ -32,6 +50,9 @@ export function Two() {
       }}
     >
       <ImageMap src={'/2.png'} map={mapArea} onMapClick={handleMapClick} />
+      {isBellClicked && (
+        <SubscriptionBox textSequence={subTwo} onFinishSub={() => router.push({ query: { page: 3 } })} />
+      )}
     </div>
   )
 }
