@@ -22,10 +22,21 @@ export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
   }, [curIndex])
   if (finishSub) return null
 
+  const noAuthorStyle = !textSequence[curIndex]?.author
+    ? {
+        alignItems: 'center',
+        padding: '0px',
+      }
+    : {}
+
   return (
     <>
       <div className={styles.overlay}></div>
-      <div className={styles.subscriptionBox} onClick={() => setCurIndex((prev) => prev + 1)}>
+      <div
+        className={styles.subscriptionBox}
+        onClick={() => setCurIndex((prev) => prev + 1)}
+        style={{ ...noAuthorStyle }}
+      >
         <div className={styles.author}>{textSequence[curIndex]?.author}</div>
         <span dangerouslySetInnerHTML={{ __html: textSequence[curIndex]?.text }}></span>
       </div>

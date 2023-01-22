@@ -17,12 +17,13 @@ export function EightTag() {
         src="/8-tag-1.png"
         indicator={
           <>
-            <Indicator
-              style={{
-                bottom: '80%',
-              }}
-              onClick={() => router.push({ query: { page: '7-2' } })}
-            />
+            {router.query?.hasPhoto && (
+              <img
+                src="/9-card.png"
+                style={{ position: 'absolute', cursor: 'pointer', width: '20vw' }}
+                onClick={() => router.push({ query: { page: '7-2' } })}
+              />
+            )}
 
             <Indicator
               style={{

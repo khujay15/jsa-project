@@ -21,7 +21,7 @@ const subFourteen = [
   },
   {
     author: 'Mr.Schluss',
-    text: '무슨 말이지?”',
+    text: '무슨 말이지?',
   },
 ]
 

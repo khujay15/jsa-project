@@ -1,5 +1,6 @@
 import { ImageMap } from '@qiuz/react-image-map'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 import globalStyle from '../../styles/global.module.css'
 
 export function TwentyEightTag() {
@@ -13,6 +14,7 @@ export function TwentyEightTag() {
     },
   ]
   const router = useRouter()
+  const [isButtonClick, setIsButtonClicked] = useState(false)
 
   return (
     <div
@@ -23,7 +25,14 @@ export function TwentyEightTag() {
         justifyContent: 'center',
       }}
     >
-      <ImageMap src="/28-tag.png" map={mapArea} onMapClick={() => router.push({ query: { page: '28-1' } })} />
+      <ImageMap src="/28-tag.png" map={mapArea} onMapClick={() => setIsButtonClicked(true)} />
+      {isButtonClick && (
+        <img
+          src="/9-card.png"
+          style={{ position: 'absolute', cursor: 'pointer', width: '20vw', bottom: '5vw' }}
+          onClick={() => router.push({ query: { page: '28-1' } })}
+        />
+      )}
     </div>
   )
 }

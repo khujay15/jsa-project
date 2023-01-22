@@ -22,7 +22,7 @@ const subSeven = [
   },
   {
     author: 'Mr.Schluss',
-    text: '저기요? 제가 지금 라디오를 찾고 있는데요. 혹시 어디에 있는지 아시나요?”?',
+    text: '저기요? 제가 지금 라디오를 찾고 있는데요. 혹시 어디에 있는지 아시나요?',
   },
   {
     author: 'Blue Flag Mann',

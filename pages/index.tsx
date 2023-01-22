@@ -548,7 +548,7 @@ const IndexPage = () => {
                   bottom: '10%',
                   transform: 'rotate(180deg)',
                 }}
-                onClick={movePage(31)}
+                onClick={() => router.push({ query: { page: 31, talkFinish: 0 } })}
               />
             }
           />

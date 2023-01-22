@@ -70,6 +70,7 @@ const subThirtyOne = [
 
 export function ThirtyOne() {
   const router = useRouter()
+
   return (
     <>
       <ImageMapContainer
@@ -102,7 +103,7 @@ export function ThirtyOne() {
           />
         }
       />
-      <SubscriptionBox textSequence={subThirtyOne} />
+      {!router.query.talkFinish && <SubscriptionBox textSequence={subThirtyOne} />}
     </>
   )
 }

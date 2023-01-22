@@ -21,9 +21,7 @@ export function Thirteen() {
 
   useEffect(() => {
     if (router.query.audioPlayed) return
-    setTimeout(() => {
-      curAudio?.play()
-    }, 500)
+    curAudio?.play()
   }, [router.query, curAudio])
 
   return (

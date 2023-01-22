@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Indicator } from '../Indicator'
 import { useAudio } from '../useAudio'
 import { ImageMapContainer } from '../ImageMapContainer'
@@ -48,6 +48,12 @@ export function Twelve() {
   const router = useRouter()
   const [clicked, setClicked] = useState<number>(null)
   const { curAudio, setCurAudio } = useAudio({ audioUrl: '' })
+
+  useEffect(() => {
+    return () => {
+      curAudio?.pause()
+    }
+  }, [curAudio])
 
   function handleAudio(index, url) {
     setClicked(index)
