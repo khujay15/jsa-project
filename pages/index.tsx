@@ -27,6 +27,7 @@ import { TwentyNineSide } from '../components/scene/TwentyNineSide'
 import { FourtyOne } from '../components/scene/FourtyOne'
 import { useEffect } from 'react'
 import Head from 'next/head'
+import { Start } from '../components/scene/Start'
 
 function imagePreload(urls: string[]) {
   urls.forEach((url) => {
@@ -76,6 +77,30 @@ const IndexPage = () => {
       '/19-a.JPG',
       '/20-1.jpg',
       '/20-2.jpeg',
+      '/20.JPG',
+      '/21.JPG',
+      '/22.JPG',
+      '/23.JPG',
+      '/24-p.PNG',
+      '/25.jpg',
+      '/26.jpeg',
+      '/28.jpeg',
+      '/28-1.jpeg',
+      '/28-2.jpg',
+      '/29-b-p.png',
+      '/29-b.jpeg',
+      '/29.jpeg',
+      '/30.jpeg',
+      '/31-1.jpeg',
+      '/32.jpg',
+      '/33.jpg',
+      '/34.jpg',
+      '/35.jpeg',
+      '/36.jpeg',
+      '/38.jpg',
+      '/39.JPG',
+      '/40.JPG',
+      '/41-end.png',
     ])
   }, [])
 
@@ -739,7 +764,14 @@ const IndexPage = () => {
         return <img src="/end.png" />
 
       default:
-        return <One />
+        return (
+          <Start
+            onStart={() => {
+              curAudio.play()
+              router.push({ query: { page: 1 } })
+            }}
+          />
+        )
     }
   }
   return (
@@ -747,21 +779,12 @@ const IndexPage = () => {
       <Head>
         <link rel="preload" href="/2.png" as="image" />
         <link rel="preload" href="/15.mp4" as="video" />
-        <link rel="preload" href="/15.mp4" as="video" />
-
-        {/* <link rel="preload" href="/audio/radio-c1.mp4" as="audio" />
-        <link rel="preload" href="/audio/radio-c2.mp4" as="audio" />
-        <link rel="preload" href="/audio/radio-c3.mp4" as="audio" />
-        <link rel="preload" href="/audio/radio-c4.mp4" as="audio" />
-        <link rel="preload" href="/audio/radio-c5.mp4" as="audio" />
-
-        <link rel="preload" href="/audio/phone-up.mp4" as="audio" />
-        <link rel="preload" href="/audio/phone-talk.mp4" as="audio" />
-        <link rel="preload" href="/audio/phone.mp4" as="audio" /> */}
+        <link rel="preload" href="/27.mp4" as="video" />
+        <link rel="preload" href="/37-end.mp4" as="video" />
 
         <link rel="preload" href="/4-logo.png" />
       </Head>
-      <GameAudio audio={curAudio} />
+      {/* <GameAudio audio={curAudio} /> */}
       <div
         style={{
           width: '100vw',
