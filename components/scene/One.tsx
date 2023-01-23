@@ -62,7 +62,7 @@ export function One() {
         setIsBlueDoorClicked(true)
         return
       case 1:
-        router.push({ query: { page: 2 } })
+        router.push('two')
         return
       case 2:
         setIsWindowClicked(true)

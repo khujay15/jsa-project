@@ -674,7 +674,7 @@ const IndexPage = () => {
           <Start
             onStart={() => {
               curAudio.play()
-              router.push({ query: { page: 1 } })
+              router.push('one')
             }}
           />
         )
