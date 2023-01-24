@@ -41,6 +41,7 @@ const subTwelve = [
   {
     author: 'Mr.Schluss',
     text: '오! 라디오가 여기 있었군.',
+    enText: 'Oh! There it is.',
   },
 ]
 

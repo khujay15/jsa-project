@@ -18,10 +18,12 @@ const subFourteen = [
   {
     author: '???',
     text: '뭐해? 빨리 계단으로 내려와! 지금 당장 이 곳을 벗어나야해. 그들이 실험을 시작했어! 나 지금 밑에 있다고!',
+    enText: `What are you doing? Come down the stairs! We need to get out of here right now. They started the experiment! I'm downstairs right now!`,
   },
   {
     author: 'Mr.Schluss',
     text: '무슨 말이지?',
+    enText: `What does it means?`,
   },
 ]
 

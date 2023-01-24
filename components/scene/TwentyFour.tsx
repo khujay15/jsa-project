@@ -9,26 +9,32 @@ const subTwnetyfour = [
   {
     author: 'Twins',
     text: `오! 우리는 아무 짓도 안했어요. 우린 ‘Ungleich’가 절대 아니에요!`,
+    enText: `oh! We didn't do anything. We're definitely not 'Ungleich'!`,
   },
   {
     author: 'Mr.Schluss',
     text: '네? 저는 단지 보안팀 직원으로서 회사를 둘러보던 중입니다.',
+    enText: `Sorry? I was patrolling the company as a security guard.`,
   },
   {
     author: 'Twins',
     text: '오 제발 믿어주세요. 우리는 일주일을 공평하게 나누기 위해 같은 스웨터를 입기까지 한다고요.',
+    enText: `Oh please trust me. We even wear the same sweater to split the week evenly.`,
   },
   {
     author: 'Mr.Schluss',
     text: '날짜를 나눠서 입어도 되잖아요.',
+    enText: `You can split the date and wear it.`,
   },
   {
     author: 'Twins',
     text: '그건 불공평하잖아요. 일주일은 7일인 인걸요.',
+    enText: `That's not equal. A week is 7 days.`,
   },
   {
     author: 'Mr.Schluss',
     text: '아하 그럼 곤란하겠네요.',
+    enText: `Aha, that would be a problem`,
   },
 ]
 

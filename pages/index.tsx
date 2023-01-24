@@ -690,7 +690,6 @@ const IndexPage = () => {
 
         <link rel="preload" href="/4-logo.png" />
       </Head>
-      {/* <GameAudio audio={curAudio} /> */}
       <div
         style={{
           width: '100vw',

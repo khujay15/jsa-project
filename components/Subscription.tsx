@@ -1,6 +1,7 @@
 export interface TextSequence {
   text: string
   author?: string
+  enText: string
 }
 interface Props {
   textSequence: TextSequence[]
@@ -9,10 +10,12 @@ interface Props {
 
 import { useEffect, useState } from 'react'
 import styles from '../styles/global.module.css'
+import { usePage } from './usePage'
 
 export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
   const [curIndex, setCurIndex] = useState<number>(0)
   const [finishSub, setFinishSub] = useState<boolean>(false)
+  const { isKorean } = usePage()
 
   useEffect(() => {
     if (curIndex === textSequence.length) {
@@ -29,6 +32,8 @@ export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
       }
     : {}
 
+  const curText = isKorean ? textSequence[curIndex]?.text : textSequence[curIndex]?.enText
+
   return (
     <>
       <div className={styles.overlay}></div>
@@ -38,7 +43,7 @@ export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
         style={{ ...noAuthorStyle }}
       >
         <div className={styles.author}>{textSequence[curIndex]?.author}</div>
-        <span dangerouslySetInnerHTML={{ __html: textSequence[curIndex]?.text }}></span>
+        <span dangerouslySetInnerHTML={{ __html: curText }}></span>
       </div>
     </>
   )

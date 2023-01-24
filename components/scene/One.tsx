@@ -3,6 +3,7 @@ import { ImageMap } from '@qiuz/react-image-map'
 import styles from '../../styles/global.module.css'
 import { SubscriptionBox, TextSequence } from '../Subscription'
 import { useState } from 'react'
+import { usePage } from '../usePage'
 
 const mapArea = [
   // 문
@@ -35,18 +36,22 @@ const mapArea = [
 const subOne: TextSequence[] = [
   {
     text: '항공 우주 산업 회사의 새로운 보안팀 직원으로 취직하게 된 Mr.Schluss. <br /> 평범한 회사처럼 보이지만 최근 사내 ‘Ungleich’라는 불법 스쾃의 활동으로 골머리를 썩고있다.',
+    enText: '',
   },
 ]
 
-const subBlue: TextSequence[] = [
+const subBlue = [
   {
     text: '첫 출근에 너무 예의가 없는게 아닐까? ',
+    enText: `Isn't it too rude? It’s my first day.`,
     author: 'Mr.Schluss',
   },
 ]
+
 const subWindow: TextSequence[] = [
   {
     text: '첫 출근에 훔쳐보는건 너무 음침한 것 같다.',
+    enText: `I think it's too creepy to peek at the first day of work.`,
     author: 'Mr.Schluss',
   },
 ]

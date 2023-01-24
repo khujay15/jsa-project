@@ -6,6 +6,7 @@ import { SubscriptionBox } from '../Subscription'
 const subNoPhoto = [
   {
     text: '당신의 ID카드에 아직 사진이 등록되지 않아 해당 구역으로 진입이 불가능합니다.',
+    enText: '“Access denied. Register your Id foto”',
   },
 ]
 export function EightTag() {
