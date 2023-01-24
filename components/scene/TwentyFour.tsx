@@ -9,7 +9,7 @@ const subTwnetyfour = [
   {
     author: 'Twins',
     text: `오! 우리는 아무 짓도 안했어요. 우린 ‘Ungleich’가 절대 아니에요!`,
-    enText: `oh! We didn't do anything. We're definitely not 'Ungleich'!`,
+    enText: `Oh! We didn't do anything. We're definitely not 'Ungleich'!`,
   },
   {
     author: 'Mr.Schluss',

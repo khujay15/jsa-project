@@ -7,7 +7,7 @@ const subThirtyOne = [
   {
     author: 'Mr.Middle',
     text: '안녕하세요 나는 회사의 분석관 인사팀 Mr.middle입니다 <br /> 당신은 최근 우리 회사 내에서 일어나는 두 진영의 대립에 대해서 얼마나 알고 있죠?',
-    enText: `hello. I’m Mr.middle, the analyst of the company.How much do you know about the recent confrontation between the two camps within our company?`,
+    enText: `Hello. I’m Mr.middle, the analyst of the company.How much do you know about the recent confrontation between the two camps within our company?`,
   },
   {
     author: 'Mr.Schluss',

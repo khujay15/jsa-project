@@ -672,7 +672,7 @@ const IndexPage = () => {
             <img src="/end.png" />
             <div
               style={{ position: 'absolute', color: 'white', bottom: '20vw', fontSize: '20px', cursor: 'pointer' }}
-              onClick={movePage(1)}
+              onClick={() => (window.location.href = '/')}
             >
               retry
             </div>

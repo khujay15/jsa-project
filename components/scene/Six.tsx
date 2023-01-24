@@ -22,7 +22,7 @@ const subSix = [
   {
     author: 'Box man',
     text: '알면 멍청하게 서있지 말고 라디오나 틀어줘!',
-    enText: `yeah? Then don't stand there stupidly. Just turn on the radio!`,
+    enText: `Yeah? Then don't stand there stupidly. Just turn on the radio!`,
   },
   {
     author: 'Mr.Schluss',

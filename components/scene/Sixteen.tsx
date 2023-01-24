@@ -9,7 +9,7 @@ const subSixteen = [
   {
     author: 'Mr.Certain',
     text: '오! 진정한 JSA의 직원이 되신건가요?',
-    enText: `oh! Have you finally become a true employee of JSA?`,
+    enText: `Oh! Have you finally become a true employee of JSA?`,
   },
   {
     author: 'Mr.Schluss',

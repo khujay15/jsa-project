@@ -10,7 +10,7 @@ const subThirtySeven = [
   {
     author: 'Mr.Schluss',
     text: '네 뭐라고요? 제가 왜 실험에 참가해야하죠? 저는 이미 이 회사에 다니고 있는걸요?',
-    enText: `what? Why do I have to participate in the experiment? I'm already working at this company.`,
+    enText: `What? Why do I have to participate in the experiment? I'm already working at this company.`,
   },
   {
     author: 'Mr.Fainter',
