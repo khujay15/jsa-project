@@ -12,7 +12,7 @@ const subThirtyOne = [
   {
     author: 'Mr.Schluss',
     text: 'Ungleich와의 대립 말인가요? ',
-    enText: `​​You mean confrontation with Ungleich?`,
+    enText: `You mean confrontation with Ungleich?`,
   },
   {
     author: 'Mr.Middle',

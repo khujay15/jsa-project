@@ -3,7 +3,6 @@ import { ImageMap } from '@qiuz/react-image-map'
 import styles from '../../styles/global.module.css'
 import { SubscriptionBox, TextSequence } from '../Subscription'
 import { useState } from 'react'
-import { usePage } from '../usePage'
 
 const mapArea = [
   // 문

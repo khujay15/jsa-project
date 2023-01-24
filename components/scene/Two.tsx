@@ -4,7 +4,6 @@ import { useState } from 'react'
 import styles from '../../styles/global.module.css'
 import { SubscriptionBox } from '../Subscription'
 import { useAudio } from '../useAudio'
-import { usePage } from '../usePage'
 
 const mapArea = [
   {
