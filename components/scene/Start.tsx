@@ -72,6 +72,9 @@ export function Start({ onStart }) {
       '/39.JPG',
       '/40.JPG',
       '/41-end.png',
+      '/15-poster.jpg',
+      '/27-poster.jpg',
+      '/37-poster.jpg',
     ])
   }, [])
 
@@ -95,14 +98,14 @@ export function Start({ onStart }) {
 
   return (
     <>
-      <ImageContainer src="/intro.jpg" />
+      <ImageContainer src="/start.jpg" />
       <div
         style={{
           position: 'absolute',
           color: 'orange',
           fontSize: '40px',
           cursor: 'pointer',
-          bottom: '10%',
+          bottom: '5%',
           border: '1px solid orange',
           padding: '2px 6px 2px 6px',
         }}

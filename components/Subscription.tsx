@@ -28,7 +28,7 @@ export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
   const noAuthorStyle = !textSequence[curIndex]?.author
     ? {
         alignItems: 'center',
-        padding: '0px',
+        padding: '0px 15px 0px 15px',
       }
     : {}
 

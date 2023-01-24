@@ -73,7 +73,7 @@ export function ThirtySeven() {
   const router = useRouter()
   return (
     <>
-      <video style={{ height: '100vh' }} autoPlay muted loop>
+      <video style={{ height: '100vh' }} autoPlay muted loop poster="/37-poster.jpg">
         <source src="/37-end.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>

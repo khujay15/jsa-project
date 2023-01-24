@@ -376,7 +376,7 @@ const IndexPage = () => {
       case '27':
         return (
           <>
-            <video style={{ height: '100vh' }} autoPlay muted loop preload="auto">
+            <video style={{ height: '100vh' }} autoPlay muted loop preload="auto" poster="/27-poster.jpg">
               <source src="/27.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
