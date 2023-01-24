@@ -2,6 +2,7 @@ export interface TextSequence {
   text: string
   author?: string
   enText: string
+  onActive?: () => void
 }
 interface Props {
   textSequence: TextSequence[]
@@ -22,6 +23,7 @@ export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
       onFinishSub?.()
       setFinishSub(true)
     }
+    if (textSequence[curIndex]?.onActive) textSequence[curIndex]?.onActive()
   }, [curIndex])
   if (finishSub) return null
 

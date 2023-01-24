@@ -93,6 +93,7 @@ export function Start({ onStart }) {
       '/audio/phone.mp4',
       '/audio/phone-up.mp4',
       '/audio/phone-talk.mp4',
+      '/audio/radio-noise.mp4',
     ])
   }, [])
 
