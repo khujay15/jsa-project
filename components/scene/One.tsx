@@ -36,7 +36,7 @@ const mapArea = [
 const subOne: TextSequence[] = [
   {
     text: '항공 우주 산업 회사의 새로운 보안팀 직원으로 취직하게 된 Mr.Schluss. <br /> 평범한 회사처럼 보이지만 최근 사내 ‘Ungleich’라는 불법 스쾃의 활동으로 골머리를 썩고있다.',
-    enText: '',
+    enText: `Mr.Schlus got a job as an employee of the aerospace company's new security team. It looks like an ordinary company, but it's been plagued by the recent in-house illegal squats called Ungleich.`,
   },
 ]
 
