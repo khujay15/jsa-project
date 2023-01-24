@@ -10,7 +10,7 @@ interface Props {
   indicator?: ReactNode
 }
 export function ImageMapContainer({ mapArea, onMapClick, src, indicator }: Props) {
-  const map = mapArea.map((area) => ({ ...area, render: () => <div className={globalStyle.mapArea} /> }))
+  const map = mapArea.map((area) => ({ render: () => <div className={globalStyle.mapArea} />, ...area }))
 
   return (
     <div

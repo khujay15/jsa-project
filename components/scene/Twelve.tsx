@@ -4,6 +4,7 @@ import { Indicator } from '../Indicator'
 import { useAudio } from '../useAudio'
 import { ImageMapContainer } from '../ImageMapContainer'
 import { SubscriptionBox } from '../Subscription'
+import style from '../../styles/global.module.css'
 
 const mapArea = [
   {
@@ -17,6 +18,11 @@ const mapArea = [
     height: '10.841698841698841%',
     left: '64.25470332850941%',
     top: '36.602316602316606%',
+    render: () => (
+      <div className={style.mapArea}>
+        <div style={{ color: 'white', marginLeft: '15vw', marginTop: '2vw' }}>⬅</div>
+      </div>
+    ),
   },
   {
     width: '5.214182344428365%',
@@ -42,6 +48,15 @@ const subTwelve = [
     author: 'Mr.Schluss',
     text: '오! 라디오가 여기 있었군.',
     enText: 'Oh! There it is.',
+  },
+]
+
+const subTwelveRadio = [
+  {
+    text: 'Recently, JSA, an aerospace industry, has succeeded in a new experiment using quantum mechanics. The success of this secret experiment is expected to mean a lot. According to what is known, if this technology is commercialized, it is expected to be a great help in developing and nurturing new talent. We will tell you the weather in the next news.',
+    enText:
+      'Recently, JSA, an aerospace industry, has succeeded in a new experiment using quantum mechanics. The success of this secret experiment is expected to mean a lot. According to what is known, if this technology is commercialized, it is expected to be a great help in developing and nurturing new talent. We will tell you the weather in the next news.',
+    additionalStyle: { fontStyle: 'italic', fontWeight: 'bold' },
   },
 ]
 
@@ -106,6 +121,19 @@ export function Twelve() {
         }
       />
       <SubscriptionBox textSequence={subTwelve} />
+      <div style={{ position: 'absolute', padding: '10px', top: '10vw', backgroundColor: '#f6c744' }}>
+        Press the hidden buttons
+      </div>
+
+      {clicked === 1 && (
+        <SubscriptionBox
+          textSequence={subTwelveRadio}
+          onFinishSub={() => {
+            setCurAudio(null)
+            setClicked(null)
+          }}
+        />
+      )}
     </>
   )
 }

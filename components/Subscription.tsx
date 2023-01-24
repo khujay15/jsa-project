@@ -3,6 +3,7 @@ export interface TextSequence {
   author?: string
   enText: string
   onActive?: () => void
+  additionalStyle?: any
 }
 interface Props {
   textSequence: TextSequence[]
@@ -45,7 +46,10 @@ export function SubscriptionBox({ textSequence, onFinishSub }: Props) {
         style={{ ...noAuthorStyle }}
       >
         <div className={styles.author}>{textSequence[curIndex]?.author}</div>
-        <span dangerouslySetInnerHTML={{ __html: curText }}></span>
+        <span
+          dangerouslySetInnerHTML={{ __html: curText }}
+          style={{ ...textSequence[curIndex]?.additionalStyle }}
+        ></span>
       </div>
     </>
   )

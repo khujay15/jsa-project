@@ -53,7 +53,7 @@ const subThirtyOne = [
   {
     author: 'Mr.Schluss',
     text: '네 겉으로 보기엔 그들은 정말 불법 스쾃이니까요',
-    enText: `Yes. on the surface, they're really illegal squats.`,
+    enText: `Yes. on the surface, they're really illegal squatter.`,
   },
   {
     author: 'Mr.Middle',
@@ -105,7 +105,6 @@ export function ThirtyOne() {
         ]}
         onMapClick={(_, index) => {
           if (index === 0) router.push({ query: { page: '31-1' } })
-          if (index === 1) window.alert('click person')
         }}
         src="/31.jpeg"
         indicator={

@@ -25,7 +25,7 @@ const textSequence = [
   {
     author: '???',
     text: '반갑습니다. Mr. Schluss. 최근 우리 회사는 불법 스쾃 ‘Ungleich’ 때문에 많은 피해를 보고 있습니다. ‘Equal Space, Equal Mankind’의 모토를 가진 우리 회사의 근간을 위협하는 그들은 주로 신입 직원들에게 접근하여 잘못된 사상을 주입시켜 선동하니 부디 그들의 흔적을 찾아주세요. ',
-    enText: `Nice to meet you, Mr. Schluss. Recently, our company has been suffering a lot from illegal squats 'Ungleich'. Threatening the foundation of our company, which has the motto of ‘Equal Space, Equal Mankind’, they mainly approach new employees and incite them to instigate false ideas, so please patrol our company.`,
+    enText: `Nice to meet you, Mr. Schluss. Recently, our company has been suffering a lot from illegal squatter 'Ungleich'. Threatening the foundation of our company, which has the motto of ‘Equal Space, Equal Mankind’, they mainly approach new employees and incite them to instigate false ideas, so please patrol our company.`,
   },
   {
     author: '???',

@@ -343,7 +343,7 @@ const IndexPage = () => {
                   bottom: '10%',
                   transform: 'rotate(180deg)',
                 }}
-                onClick={() => router.push({ query: { page: 24, showTwins: 0 } })}
+                onClick={() => router.push({ query: { page: 24, showTwins: 1 } })}
               />
             }
           />
@@ -548,7 +548,7 @@ const IndexPage = () => {
                   bottom: '10%',
                   transform: 'rotate(180deg)',
                 }}
-                onClick={() => router.push({ query: { page: 31, talkFinish: 0 } })}
+                onClick={() => router.push({ query: { page: 31, talkFinish: 1 } })}
               />
             }
           />
@@ -667,7 +667,17 @@ const IndexPage = () => {
       case '41':
         return <FourtyOne />
       case 'end':
-        return <img src="/end.png" />
+        return (
+          <>
+            <img src="/end.png" />
+            <div
+              style={{ position: 'absolute', color: 'white', bottom: '20vw', fontSize: '20px', cursor: 'pointer' }}
+              onClick={movePage(1)}
+            >
+              retry
+            </div>
+          </>
+        )
 
       default:
         return (

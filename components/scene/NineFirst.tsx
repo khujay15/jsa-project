@@ -13,7 +13,14 @@ export function NineFirst() {
       height: '10.455598455598455%',
       left: '44.42836468885673%',
       top: '15.945945945945939%',
-      render: () => <div className={globalStyle.mapArea} />,
+      render: () => (
+        <div
+          style={{ color: 'white', display: 'flex', justifyContent: 'center', alignItems: 'center' }}
+          className={globalStyle.mapArea}
+        >
+          ⬇
+        </div>
+      ),
     },
   ]
 
@@ -45,7 +52,7 @@ export function NineFirst() {
           bottom: '10%',
           transform: 'rotate(180deg)',
         }}
-        onClick={() => router.push({ query: { page: 9, hasPhoto: 0 } })}
+        onClick={() => router.push({ query: { page: 9, hasPhoto: 1 } })}
       />
       {isButtonClicked && (
         <img

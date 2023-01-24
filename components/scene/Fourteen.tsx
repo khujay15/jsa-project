@@ -57,7 +57,7 @@ export function Fourteen() {
               right: '20%',
               transform: 'rotate(90deg)',
             }}
-            onClick={() => router.push({ query: { page: 13, audioPlayed: 0 } })}
+            onClick={() => router.push({ query: { page: 13, audioPlayed: 1 } })}
           />
         }
       />
