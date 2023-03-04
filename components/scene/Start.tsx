@@ -84,7 +84,7 @@ export function Start({ onStart }) {
       '/audio/door-bell.mp3',
       '/audio/main-bgm.mp4',
 
-      '/audio/radio-c1.mp4',
+      '/audio/radio-c1.mp3',
       '/audio/radio-c2.mp4',
       '/audio/radio-c3.mp4',
       '/audio/radio-c4.mp3',

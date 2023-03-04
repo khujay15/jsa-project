@@ -93,7 +93,7 @@ export function Twelve() {
         mapArea={mapArea}
         onMapClick={(_, index) => {
           if (index === 0) {
-            handleAudio(0, '/audio/radio-c1.mp4')
+            handleAudio(0, '/audio/radio-c1.mp3')
           }
           if (index === 1) {
             handleAudio(1, '/audio/radio-c2.mp4')
