@@ -5,7 +5,7 @@ const subThirtySeven = [
   {
     author: 'Mr.Fainter',
     text: '어서오세요. 이 곳은 우리 J.S.A의 13번째 실험체 &lt;Glück Machine&gt;  입니다. <br /> 당신은 우리의 n번째 실험대상자로 선정되었습니다. 우리는 실험체의 무의식을 분석하여 우리 JSA회사의 미래 인재를 찾는 새로운 양자역학을 발견하였습니다. 우리 회사 J.S.A는 이 실험을 통해 자격이 있는 인재를 선별하고 육성하기로 결정했습니다.',
-    enText: `Welcome. This is our J.S.A test subject, the &lt;Glück Machine-8&gt;. <br /> You have been selected for our 513th dispatch. In the meantime, we analyzed the unconscious of the test subject and discovered new quantum mechanics to find future talent for our J.S.A. company. Our company, J.S.A, decided to select, nurture, and dispatch qualified personnel through this experiment.`,
+    enText: `Welcome. This is our J.S.A test subject, the &lt;Glück Machine-8&gt;. <br /> You have been selected for our 513th dispatch. In the meantime, we analyzed the unconscious of the test subject and discovered new quantum mechanics to find future talent for our J.S.A company. Our company, J.S.A, decided to select, nurture, and dispatch qualified personnel through this experiment.`,
   },
   {
     author: 'Mr.Schluss',
@@ -30,12 +30,12 @@ const subThirtySeven = [
   {
     author: 'Mr.Schluss',
     text: '무슨 소리에요? 당장 나가겠어요.',
-    enText: `What are you talking about? I'm leave right now.`,
+    enText: `What are you talking about? I'm leaving right now.`,
   },
   {
     author: 'Mr.Fainter',
-    text: '나가기 위해서는 먼저 들어와야 합니다. 시간은 한 방향으로만 흐르고 있어요. Don’t never look back. 어차피 돌아갈 수 없습니다',
-    enText: `You got to get in to get out. Time is only flowing in one direction. Don’t never look back. We can't go back anyway. Don't you want a world where all love awaits?`,
+    text: '나가기 위해서는 먼저 들어와야 합니다. 시간은 한 방향으로만 흐르고 있어요. Don’t ever look back. 어차피 돌아갈 수 없습니다',
+    enText: `You got to get in to get out. Time is only flowing in one direction. Don’t ever look back. We can't go back anyway. Don't you want a world where all love awaits?`,
   },
   {
     author: 'Mr.Schluss',

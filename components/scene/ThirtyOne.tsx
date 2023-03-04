@@ -58,7 +58,7 @@ const subThirtyOne = [
   {
     author: 'Mr.Middle',
     text: '하지만 그 안에 속하지 않고서는 그들을 판단할 수 없지 않을까요? 아 참고로 저는 그들을 옹호하는 것이 아닙니다 <br /> 우리 회사와 Fragment 둘 다 해당되는 이야기니까요. 그저 당신의 의견을 듣고 싶었습니다.',
-    enText: `But wouldn't you be able to judge them without belonging to them? Oh, by the way, I'm not defending them. It's an analysis that applies to both our company and ‘Unleich’. I just wanted to hear your opinion.`,
+    enText: `But wouldn't you be able to judge them without belonging to them? Oh, by the way, I'm not defending them. It's an analysis that applies to both our company and ‘Fragment’. I just wanted to hear your opinion.`,
   },
   {
     author: 'Mr.Schluss',

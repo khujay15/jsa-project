@@ -53,7 +53,7 @@ export function Start({ onStart }) {
       '/22.JPG',
       '/23.JPG',
       '/24-p.PNG',
-      '/25.jpg',
+      '/25-f.jpg',
       '/26.jpeg',
       '/28.jpeg',
       '/28-1.jpeg',

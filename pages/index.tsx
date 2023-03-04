@@ -336,7 +336,7 @@ const IndexPage = () => {
       case '25':
         return (
           <ImageContainer
-            src="/25.jpg"
+            src="/25-f.jpg"
             indicator={
               <Indicator
                 style={{
