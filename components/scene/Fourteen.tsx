@@ -23,7 +23,7 @@ const subFourteen = [
   {
     author: 'Mr.Schluss',
     text: '무슨 말이지?',
-    enText: `What does it means?`,
+    enText: `What does it mean?`,
   },
 ]
 

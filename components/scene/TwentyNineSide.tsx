@@ -6,8 +6,8 @@ import { SubscriptionBox } from '../Subscription'
 const subTwnetynineSide = [
   {
     author: 'Space mann ',
-    text: `‘Ungleich’ 놈들은 어디있는거야? 이봐 당신 이곳엔 무슨 일이지? 혹시 너도 ‘Ungleich’의 한패야?`,
-    enText: `Where are the damm ‘Ungleich’? Hey, what are you doing here? Are you also a member of ‘Ungleich’?`,
+    text: `‘Fragment’ 놈들은 어디있는거야? 이봐 당신 이곳엔 무슨 일이지? 혹시 너도 ‘Fragment’의 한패야?`,
+    enText: `Where is the damm ‘Fragment’? Hey, what are you doing here? Are you also a member of ‘Fragment’?`,
   },
   {
     author: 'Mr.Schluss',

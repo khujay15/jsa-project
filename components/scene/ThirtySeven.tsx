@@ -4,8 +4,8 @@ import { SubscriptionBox } from '../Subscription'
 const subThirtySeven = [
   {
     author: 'Mr.Fainter',
-    text: '어서오세요. 이 곳은 우리 j.s.a의 13번째 실험체 &lt;Glück Machine&gt;  입니다. <br /> 당신은 우리의 n번째 실험대상자로 선정되었습니다. 우리는 실험체의 무의식을 분석하여 우리 JSA회사의 미래 인재를 찾는 새로운 양자역학을 발견하였습니다. 우리 회사 J.S.A는 이 실험을 통해 자격이 있는 인재를 선별하고 육성하기로 결정했습니다.',
-    enText: `Welcome. This is our 13th experiment, the &lt;Glück Machine&gt;. <br /> You were selected as our 513th subject. We have discovered a new quantum mechanics that analyzes the unconsciousness of the experiment and finds the future talent of our J.S.A. company. Our company J.S.A. decided to select and nurture qualified personnel through this experiment.`,
+    text: '어서오세요. 이 곳은 우리 J.S.A의 13번째 실험체 &lt;Glück Machine&gt;  입니다. <br /> 당신은 우리의 n번째 실험대상자로 선정되었습니다. 우리는 실험체의 무의식을 분석하여 우리 JSA회사의 미래 인재를 찾는 새로운 양자역학을 발견하였습니다. 우리 회사 J.S.A는 이 실험을 통해 자격이 있는 인재를 선별하고 육성하기로 결정했습니다.',
+    enText: `Welcome. This is our J.S.A test subject, the &lt;Glück Machine-8&gt;. <br /> You have been selected for our 513th dispatch. In the meantime, we analyzed the unconscious of the test subject and discovered new quantum mechanics to find future talent for our J.S.A. company. Our company, J.S.A, decided to select, nurture, and dispatch qualified personnel through this experiment.`,
   },
   {
     author: 'Mr.Schluss',
@@ -24,8 +24,8 @@ const subThirtySeven = [
   },
   {
     author: 'Mr.Fainter',
-    text: '네 이 방안에 당신이 원하는 로비로 통하는 길이 있길 바랍니다.',
-    enText: `Yes. I hope there's a way to the lobby you want in this room.`,
+    text: '걱정마세요. 우리가 빅데이터를 사용해 최적의 미래로 보내드릴게요. 만약 당신이 적합한 사람이라면요.',
+    enText: `Don’t worry. We will dispatch you to an optimized future using the big data we have collected. <br /> Oh, if you're the right person.`,
   },
   {
     author: 'Mr.Schluss',
@@ -34,8 +34,8 @@ const subThirtySeven = [
   },
   {
     author: 'Mr.Fainter',
-    text: '나가기 위해서는 먼저 들어와야 합니다. 시간은 한 방향으로만 흐르고 있어요. Don’t never look back. 어짜피 돌아갈 수 없습니다',
-    enText: `You got to get in to get out. Time is only flowing in one direction. Don’t never look back. We can't go back anyway.`,
+    text: '나가기 위해서는 먼저 들어와야 합니다. 시간은 한 방향으로만 흐르고 있어요. Don’t never look back. 어차피 돌아갈 수 없습니다',
+    enText: `You got to get in to get out. Time is only flowing in one direction. Don’t never look back. We can't go back anyway. Don't you want a world where all love awaits?`,
   },
   {
     author: 'Mr.Schluss',
@@ -45,7 +45,7 @@ const subThirtySeven = [
   {
     author: 'Mr.Fainter',
     text: '글쎄요. 제가 아는 한 이 기계는 안전했습니다만… 그것 또한 이 굿럭 머신의 분석에 따라 달라질 수도 있습니다. 자 이제 당신의 무의식이 말하는 당신의 미래는 무엇일까요. 우리의 Glück Machine은 실험체의 정신을 분석하여 개개인 맞춤 서비스를 제공합니다. 이 방은 당신을 로비로 안내할수도, 따뜻한 당신의 집으로 안내할 수도 또 102938억 광년 떨어진 plant-736으로 안내할 수도 있습니다.',
-    enText: `Well, as far as I know, this machine was safe, but... It may also depend on the analysis of this Glück Machine. Now what is your future that your unconsciousness says? Our Glück Machine analyzes the spirit of the experiment and provides personalized services. This room can lead you to the lobby, to your warm home, or to plant-736 which is 10293.8 billion light years away.`,
+    enText: `Well, as far as I know, this machine was safe, but... It may also depend on the analysis of this Glück Machine. Now let's find out who you are through your subconscious mind. Our Glück Machine analyzes the subject's mind and provides personalized service and provides personalized service. This room can take you to the lobby, to your warm home, or to plant-736, 10293.8 billion light years away.`,
   },
   {
     author: 'Mr.Schluss',
@@ -60,12 +60,12 @@ const subThirtySeven = [
   {
     author: 'Mr.Schluss',
     text: '정말 지긋지긋하네요. 고작 기계따위가 정한 내 미래를 감당하라고요?  내가 왜요! 나는 평생 착한 일만 하며 건실한 직장에 취직하고 근면성실하게 살았는데. 나는 너무 억울해요. 내가 아는 한 삶은 이렇게 불공평하지 않습니다.',
-    enText: `I'm sick and tired of it. You want me to live up to my future set by that machine? Why me? All my life, I did good things, got a decent job, and lived diligently. I'm so upset. Life isn't this unequal as far as I know.`,
+    enText: `I'm sick of it. Do you want me to live up to my future set by that machine? Why me? All my life, I did good things, got a decent job, and lived diligently. I'm so upset. Life isn't this unfair as far as I know.`,
   },
   {
     author: 'Mr.Fainter',
     text: '삶은 공평해요. 특히 이 곳에서는 더욱 더 공평하죠. 우리는 누구보다도 공평함을 추구 하고 있습니다. <br />음… 그렇다면 당신의ㅡ카르마때문이라고 생각해보세요. 한결 낫죠? 자 그럼 Good luck~',
-    enText: `Life is equal. Especially here, it's even more equal. We are seeking equality more than anyone else. Well…. Then think it's because of your Karma. It's much better, isn’t it? Then, good luck!`,
+    enText: `Life is fair. Especially here, it's even more equal. We are seeking equality more than anyone else. Well…. Then think it's because of your Karma. It's much better, isn’t it? Then, good luck!`,
   },
 ]
 

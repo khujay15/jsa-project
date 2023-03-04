@@ -53,9 +53,9 @@ const subTwelve = [
 
 const subTwelveRadio = [
   {
-    text: 'Recently, JSA, an aerospace industry, has succeeded in a new experiment using quantum mechanics. The success of this secret experiment is expected to mean a lot. According to what is known, if this technology is commercialized, it is expected to be a great help in developing and nurturing new talent. We will tell you the weather in the next news.',
+    text: 'Recently, JSA, an aerospace industry, has succeeded in a new experiment using quantum mechanics. The success of this secret experiment is expected to mean a lot. According to what is known, if this technology is commercialized, it is expected to be a great help in developing and nurturing new talent. We will tell you about the weather in the next news.',
     enText:
-      'Recently, JSA, an aerospace industry, has succeeded in a new experiment using quantum mechanics. The success of this secret experiment is expected to mean a lot. According to what is known, if this technology is commercialized, it is expected to be a great help in developing and nurturing new talent. We will tell you the weather in the next news.',
+      'Recently, JSA, an aerospace industry, has succeeded in a new experiment using quantum mechanics. The success of this secret experiment is expected to mean a lot. According to what is known, if this technology is commercialized, it is expected to be a great help in developing and nurturing new talent. We will tell you about the weather in the next news.',
     additionalStyle: { fontStyle: 'italic', fontWeight: 'bold' },
   },
 ]

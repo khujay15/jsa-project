@@ -7,12 +7,12 @@ const subThirtyOne = [
   {
     author: 'Mr.Middle',
     text: '안녕하세요 나는 회사의 분석관 인사팀 Mr.middle입니다 <br /> 당신은 최근 우리 회사 내에서 일어나는 두 진영의 대립에 대해서 얼마나 알고 있죠?',
-    enText: `Hello. I’m Mr.middle, the analyst of the company.How much do you know about the recent confrontation between the two camps within our company?`,
+    enText: `Hello. I’m Mr.middle, the analyst of the company. This room is called camera obscura. How much do you know about the recent confrontation between the two camps within our company?`,
   },
   {
     author: 'Mr.Schluss',
-    text: 'Ungleich와의 대립 말인가요? ',
-    enText: `You mean confrontation with Ungleich?`,
+    text: 'Fragment와의 대립 말인가요? ',
+    enText: `Do you mean confrontation with Fragment?`,
   },
   {
     author: 'Mr.Middle',
@@ -26,8 +26,8 @@ const subThirtyOne = [
   },
   {
     author: 'Mr.Middle',
-    text: '그렇다면 당신은 ungleich를 반대하나요?',
-    enText: `So are you against ‘Ungleich’?`,
+    text: '그렇다면 당신은 Fragment를 반대하나요?',
+    enText: `So are you against ‘Fragment’?`,
   },
   {
     author: 'Mr.Schluss',
@@ -36,14 +36,14 @@ const subThirtyOne = [
   },
   {
     author: 'Mr.Middle',
-    text: '그렇군요. 당신은 ‘Ungleich’에 대해 얼마나 알고 있죠?',
-    enText: `Okay. How much do you know about ‘Ungleich’?`,
+    text: '그렇군요. 당신은 ‘Fragment’에 대해 얼마나 알고 있죠?',
+    enText: `Okay. How much do you know about ‘Fragment’?`,
   },
 
   {
     author: 'Mr.Schluss',
     text: '잘 알지는 못해요. 그저 그들이 직원들을 선동하여 사내 분란을 일으킨다는 사실 밖에요',
-    enText: `Not that much I guess? It's just that they incite our employees to cause internal riots.`,
+    enText: `Not that much I guess? It's just that they incite our employees to cause internal riots. All I know is that they claim that 'To love everything is to love nothing’.`,
   },
   {
     author: 'Mr.Middle',
@@ -57,7 +57,7 @@ const subThirtyOne = [
   },
   {
     author: 'Mr.Middle',
-    text: '하지만 그 안에 속하지 않고서는 그들을 판단할 수 없지 않을까요? 아 참고로 저는 그들을 옹호하는 것이 아닙니다 <br /> 우리 회사와 ungleich 둘 다 해당되는 이야기니까요. 그저 당신의 의견을 듣고 싶었습니다.',
+    text: '하지만 그 안에 속하지 않고서는 그들을 판단할 수 없지 않을까요? 아 참고로 저는 그들을 옹호하는 것이 아닙니다 <br /> 우리 회사와 Fragment 둘 다 해당되는 이야기니까요. 그저 당신의 의견을 듣고 싶었습니다.',
     enText: `But wouldn't you be able to judge them without belonging to them? Oh, by the way, I'm not defending them. It's an analysis that applies to both our company and ‘Unleich’. I just wanted to hear your opinion.`,
   },
   {

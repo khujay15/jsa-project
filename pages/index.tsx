@@ -336,7 +336,7 @@ const IndexPage = () => {
       case '25':
         return (
           <ImageContainer
-            src="/25.JPG"
+            src="/25.jpg"
             indicator={
               <Indicator
                 style={{
@@ -605,7 +605,7 @@ const IndexPage = () => {
                 top: '21.35135135135135%',
               },
             ]}
-            onMapClick={movePage(35)}
+            onMapClick={movePage(39)}
           />
         )
       case '35':
@@ -654,7 +654,7 @@ const IndexPage = () => {
                 style={{
                   bottom: '10%',
                 }}
-                onClick={movePage(39)}
+                onClick={movePage(35)}
               />
             }
           />

@@ -20,13 +20,13 @@ const subThirtyNine = [
   },
   {
     author: 'Mr.Schluss',
-    text: '글쎄. 일단 나는 ungleich가 아니야. 그리고 공평한 세상을 추구해. <br /> 그러니까 나는 공평한 사람이지. 공평하다는 것은 좋은 것이니까 나는 착한 사람인거고.',
+    text: '글쎄. 일단 나는 Fragment가 아니야. 그리고 공평한 세상을 추구해. <br /> 그러니까 나는 공평한 사람이지. 공평하다는 것은 좋은 것이니까 나는 착한 사람인거고.',
     enText: `Well, first of all, I'm not the ‘Unleich’. And seek a equal world. So I'm a equal man. Being equal is a good thing, so I'm a good person. And I've never committed a crime in particular. Then am I not a good person?`,
   },
   {
     author: 'Snowman',
     text: '그렇다면 세상이 공평하다면 왜 착한 인간에게 나쁜 일은 끊임없이 일어나는걸까?',
-    enText: `Then, if the world is equal, why does bad things happen constantly to good people?`,
+    enText: `Then, if the world is equal, why does bad things happen constantly to good people? Why doesn't this world love everyone? After all, wouldn't 'Loving everything be the same as loving nothing'?`,
   },
   {
     author: 'Mr.Schluss',

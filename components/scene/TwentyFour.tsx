@@ -8,8 +8,8 @@ import Styles from '../../styles/global.module.css'
 const subTwnetyfour = [
   {
     author: 'Twins',
-    text: `오! 우리는 아무 짓도 안했어요. 우린 ‘Ungleich’가 절대 아니에요!`,
-    enText: `Oh! We didn't do anything. We're definitely not 'Ungleich'!`,
+    text: `오! 우리는 아무 짓도 안했어요. 우린 ‘Fragment’가 절대 아니에요!`,
+    enText: `Oh! We didn't do anything. We're definitely not 'Fragment'!`,
   },
   {
     author: 'Mr.Schluss',
@@ -19,7 +19,7 @@ const subTwnetyfour = [
   {
     author: 'Twins',
     text: '오 제발 믿어주세요. 우리는 일주일을 공평하게 나누기 위해 같은 스웨터를 입기까지 한다고요.',
-    enText: `Oh please trust me. We even wear the same sweater to split the week evenly.`,
+    enText: `Oh please trust me. We respect the company motto. Look! Even we have our fair share of this sweater.`,
   },
   {
     author: 'Mr.Schluss',
